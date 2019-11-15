@@ -30,7 +30,7 @@ $font = "Consolas,11"
 Set-Location $PSScriptRoot
 
 # Dot source functions file
-. .\PowerTool-Function.ps1
+. .\Functions\PowerTool-Function.ps1
 
 # ================================ [Form GUI]
 
@@ -97,7 +97,6 @@ $txbHostname.multiline = $false
 $txbHostname.width = 175
 $txbHostname.height = 30
 $txbHostname.CharacterCasing = "Upper"
-$txbHostname.MaxLength = 8
 $txbHostname.location = New-Object System.Drawing.Point(170,46)
 $txbHostname.Font = 'Microsoft Sans Serif,10'
 $txbHostname.TabIndex = 0
