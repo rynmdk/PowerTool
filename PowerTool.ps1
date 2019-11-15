@@ -75,7 +75,7 @@ $btnConnect = New-Object system.Windows.Forms.Button
 $btnConnect.text = "Connect"
 $btnConnect.width = 200
 $btnConnect.height = 30
-$btnConnect.location = New-Object System.Drawing.Point(722,42)
+$btnConnect.location = New-Object System.Drawing.Point(722,43)
 $btnConnect.Font = 'Microsoft Sans Serif,10'
 $btnConnect.BackColor = $buttonColour
 $btnConnect.TabIndex = 2
@@ -83,10 +83,8 @@ $PowerTool.Controls.Add($btnConnect)
 
 # Hostname Label
 $lblHostname = New-Object system.Windows.Forms.Label
-$lblHostname.text = "Enter Computer Name:"
-$lblHostname.AutoSize = $true
-$lblHostname.width = 25
-$lblHostname.height = 30
+$lblHostname.text = "Enter Computer Name or IP Address:"
+$lblHostname.AutoSize = $True
 $lblHostname.location = New-Object System.Drawing.Point(20,50)
 $lblHostname.Font = 'Microsoft Sans Serif,10'
 $PowerTool.Controls.Add($lblHostname)
@@ -94,35 +92,13 @@ $PowerTool.Controls.Add($lblHostname)
 # Hostname Textbox
 $txbHostname = New-Object system.Windows.Forms.TextBox
 $txbHostname.multiline = $false
-$txbHostname.width = 175
+$txbHostname.width = 300
 $txbHostname.height = 30
 $txbHostname.CharacterCasing = "Upper"
-$txbHostname.location = New-Object System.Drawing.Point(170,46)
+$txbHostname.location = New-Object System.Drawing.Point(253,47)
 $txbHostname.Font = 'Microsoft Sans Serif,10'
 $txbHostname.TabIndex = 0
 $PowerTool.Controls.Add($txbHostname)
-
-# IP Address Label
-$lblAddress = New-Object system.Windows.Forms.Label
-$lblAddress.text = "Enter IP Address:"
-$lblAddress.AutoSize = $true
-$lblAddress.width = 25
-$lblAddress.height = 30
-$lblAddress.location  = New-Object System.Drawing.Point(375,50)
-$lblAddress.Font = 'Microsoft Sans Serif,10'
-$PowerTool.Controls.Add($lblAddress)
-
-# IP Address Textbox
-$txbIPAddress = New-Object system.Windows.Forms.TextBox
-$txbIPAddress.multiline  = $false
-$txbIPAddress.width = 175
-$txbIPAddress.height = 30
-$txbIPAddress.CharacterCasing = "Upper"
-$txbIPAddress.MaxLength = 15
-$txbIPAddress.location = New-Object System.Drawing.Point(495,46)
-$txbIPAddress.Font = 'Microsoft Sans Serif,10'
-$txbIPAddress.TabIndex = 1
-$PowerTool.Controls.Add($txbIPAddress)
 
 # Clear Button
 $btnClearLogs = New-Object system.Windows.Forms.Button

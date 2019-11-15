@@ -17,6 +17,7 @@
 Set-Location $PSScriptRoot
 
 # Main Functions
+
 function PT-Connect {
 
     # Connect to remote workstation
@@ -24,29 +25,12 @@ function PT-Connect {
     PT-ClearLog
     PT-DisableRemoteTools
 
-    if (!($txbHostname.text -eq "") ) {
-
-        if (!($txbIPAddress.Text -eq "") ) {
-
-            # Warning as both IP and hostname have been entered
-            PT-LogWrite "Please enter ONLY a Hostname or IP Address and try again."
-            return 
-
-        } else {
-
-            # Set hostname up as a global variable based on the hostname entry and set its text to uppercase
-            $global:hostname = $txbHostname.text.toupper()
-        }
-
-    } else {
-
-        # Set hostname up as a global variable based on the IP Address entry and set its text to uppercase
-        $global:hostname = $txbIPAddress.text.toupper()
-    }
+    # Set hostname up as a global variable based on the hostname entry
+    $global:hostname = $txbHostname.text
 
     if ($hostname -eq "") {
     
-        PT-LogWrite "No Computer Name entered. Please enter a valid Computer Name / IP Address"
+        PT-LogWrite "No Computer Name or IP Address entered"
 
     } else {
     
