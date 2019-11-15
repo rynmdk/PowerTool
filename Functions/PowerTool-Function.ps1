@@ -14,6 +14,8 @@
 
 #>
 
+Set-Location $PSScriptRoot
+
 # Main Functions
 function PT-Connect {
 
@@ -131,6 +133,14 @@ function PT-LogWrite {
     Param ([string]$logString)
     $now = Get-Date -Format g
     $txbLogging.Appendtext("$now - $logString `r`n")
+
+
+    # Create external logs
+    New-Item -Path ..\ -Name "Logs" -ItemType Directory
+    $date = (Get-Date).ToString("dd-MM-yyyy")
+    $now = '{0:HH:mm:ss}' -f (get-date)
+    $Log = "..\Logs\"+$env:USERNAME+"-"+$date+"-"+$hostname+".log"
+    Add-Content $log -Value "$now - $logstring" -Force
 
 }
 
