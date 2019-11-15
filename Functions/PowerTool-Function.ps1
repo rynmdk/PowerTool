@@ -136,7 +136,7 @@ function PT-LogWrite {
 
 
     # Create external logs
-    New-Item -Path ..\ -Name "Logs" -ItemType Directory
+    New-Item -Path ..\ -Name "Logs" -ItemType Directory -ErrorAction Ignore
     $date = (Get-Date).ToString("dd-MM-yyyy")
     $now = '{0:HH:mm:ss}' -f (get-date)
     $Log = "..\Logs\"+$env:USERNAME+"-"+$date+"-"+$hostname+".log"

@@ -342,11 +342,24 @@ $fixesDropdown.Size = '109, 22'
 $fixesDropdown.Text = "Scripts"
 $mainMenu.Items.Add($fixesDropdown)
 
-# Blank Dropdown
-$fixes_Template = New-Object 'System.Windows.Forms.ToolStripMenuItem'
-$fixes_Template.Size = '109, 22'
-$fixes_Template.Text = "Blank Dropdown"
-$fixesDropdown.DropDownItems.Add($fixes_Template)
+# Scripts Drowdown - Dynamically generated
+foreach($file in (Get-ChildItem ..\Scripts)) {
+
+    # To generate list items, add your script files to ..\Scripts
+
+    $dropdownName = New-Object 'System.Windows.Forms.ToolStripMenuItem'
+    $dropdownName.Size = '109, 22'
+    $dropdownName.Text = $file.BaseName
+    $fixesDropdown.DropDownItems.Add($dropdownName)
+
+    $dropdownName.Add_Click({
+    
+        # Invoke your script here
+        PT-LogWrite "$this has been invoked on $hostname"
+
+    })
+
+}
 
 ## Applications
 $applicationsDropdown = New-Object 'System.Windows.Forms.ToolStripMenuItem'
