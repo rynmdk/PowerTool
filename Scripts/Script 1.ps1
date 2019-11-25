@@ -1,1 +1,0 @@
-write-host $env:COMPUTERNAME

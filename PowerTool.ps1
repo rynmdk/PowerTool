@@ -318,7 +318,7 @@ Process {
   $mainMenu.Items.Add($fixesDropdown)
 
   # Scripts Drowdown - Dynamically generated
-  foreach($file in (Get-ChildItem -Path 'D:\GitHub\PowerTool\Scripts' ))
+  foreach($file in (Get-ChildItem -Path '..\Scripts' ))
   {
     # To generate list items, add your script files to ..\Scripts
 
