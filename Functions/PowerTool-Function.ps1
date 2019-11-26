@@ -1,7 +1,7 @@
 ﻿#requires -Version 3.0
 
 
-Set-Location -Path $PSScriptRoot
+#Set-Location -Path $PSScriptRoot
 
 
 . .\edit-ptlog.ps1 
