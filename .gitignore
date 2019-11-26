@@ -9,6 +9,6 @@
 *.dll
 
 # Exlude Images Folder
-Images/*
+# Images/*
 
 # End of https://www.gitignore.io/api/powershell
