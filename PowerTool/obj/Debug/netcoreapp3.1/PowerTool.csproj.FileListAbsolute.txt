@@ -1,0 +1,17 @@
+C:\git\PowerTool\PowerTool\bin\Debug\netcoreapp3.1\PowerTool.exe
+C:\git\PowerTool\PowerTool\bin\Debug\netcoreapp3.1\PowerTool.deps.json
+C:\git\PowerTool\PowerTool\bin\Debug\netcoreapp3.1\PowerTool.runtimeconfig.json
+C:\git\PowerTool\PowerTool\bin\Debug\netcoreapp3.1\PowerTool.runtimeconfig.dev.json
+C:\git\PowerTool\PowerTool\bin\Debug\netcoreapp3.1\PowerTool.dll
+C:\git\PowerTool\PowerTool\bin\Debug\netcoreapp3.1\PowerTool.pdb
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\PowerTool.csprojAssemblyReference.cache
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\App.g.cs
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\PowerTool_MarkupCompile.cache
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\PowerTool_MarkupCompile.lref
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\PowerTool.g.resources
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\PowerTool.AssemblyInfoInputs.cache
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\PowerTool.AssemblyInfo.cs
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\PowerTool.dll
+C:\git\PowerTool\PowerTool\obj\Debug\netcoreapp3.1\PowerTool.pdb

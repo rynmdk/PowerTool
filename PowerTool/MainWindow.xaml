@@ -1,0 +1,117 @@
+﻿<Window x:Class="PowerTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PowerTool"
+        mc:Ignorable="d"
+        Title="Power Tool" 
+        SizeToContent="Height" 
+        Width="800"
+        ResizeMode="CanMinimize">
+
+    <!-- Main Grid -->
+    <StackPanel>
+
+        <!-- Main Menu -->
+        <Menu IsMainMenu="True">
+            
+            <!-- Admin Tools Dropdown -->
+            <MenuItem Header="Admin Tools">
+                <MenuItem Header="Command Prompt"
+                          x:Name="adminCMD"
+                          Click="adminCMD_Click"/>
+                <MenuItem Header="Computer Management"
+                          x:Name="adminCompmgmt"
+                          Click="adminCompmgmt_Click"/>
+                <MenuItem Header="Event Viewer"
+                          x:Name="adminEventvwr"
+                          Click="adminEventvwr_Click"/>
+                <MenuItem Header="File Explorer"
+                          x:Name="adminFileExplorer"
+                          Click="adminFileExplorer_Click"/>
+                <MenuItem Header="PowerShell"
+                          x:Name="adminPowerShell"
+                          Click="adminPowerShell_Click"/>
+                <MenuItem Header="Remote Desktop"
+                          x:Name="adminRemoteDesktop"
+                          Click="adminRemoteDesktop_Click"/>
+            </MenuItem>
+            
+            <!-- User Account Settings Dropdown-->
+            <MenuItem Header="User Account Settings">
+                <MenuItem Header="Check Locked Account" IsCheckable="False"/>
+                <MenuItem Header="Check Expired Account"/>
+                <MenuItem Header="Unlock Account"/>
+                <MenuItem Header="Reset Password"/>
+                <MenuItem Header="Enable Account"/>
+            </MenuItem>
+            
+            <!-- Computer Information Dropdown-->
+            <MenuItem Header="Computer Information">
+                <MenuItem Header="Serial Number"/>
+                <MenuItem Header="Model"/>
+                <MenuItem Header="Operating System"/>
+                <MenuItem Header="Browser Information"/>
+                <MenuItem Header="IP Address"/>
+                <MenuItem Header="Machine Uptime"/>
+                <MenuItem Header="OS Install Date"/>
+                <MenuItem Header="CPU Usage"/>
+                <MenuItem Header="Power Settings"/>
+                <MenuItem Header="Disk &amp; Memory Information"/>
+            </MenuItem>
+            
+            <!-- Remote Tools Dropdown -->
+            <MenuItem Header="Remote Tools">
+                <MenuItem Header="PsExec"/>
+                <MenuItem Header="File Explorer"/>
+                <MenuItem Header="Ping"/>
+                <MenuItem Header="Remote Dekstop Connection"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Connect Panel -->
+        <StackPanel Orientation="Horizontal"
+                    Margin="10 20 10 0">
+            
+            <!-- Computer Name Label -->
+            <Label Content="Computer Name:"
+                       Margin="0 0 5 0"
+                       VerticalAlignment="Center"/>
+            
+            <!-- Computer Name Textbox -->
+            <TextBox Padding="2"
+                     Margin="0 0 5 0"
+                     Width="200"/>
+
+            <!-- Connect Button -->
+            <Button Content="Connect"
+                    Width="100"
+                    Padding="10 0"/>
+            
+        </StackPanel>
+
+        <!-- Main Textbox (for output) -->
+        <RichTextBox Height="300"
+                     Margin="10"
+                     BorderThickness="2"/>
+
+        <!-- Clear / Copy Panel -->
+        <StackPanel Margin="10 0 10 10"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            
+            <!-- Copy Logs Button -->
+            <Button Content="Copy Logs"
+                    Margin="10 0 10 0"
+                    Padding="5"/>
+
+            <!-- Clear Logs Button -->
+            <Button Content="Clear Logs"
+                    Padding="5"/>
+            
+        </StackPanel>
+
+    </StackPanel>
+    
+</Window>
