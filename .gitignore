@@ -11,4 +11,8 @@
 # Exlude Images Folder
 Images/*
 
+# Exclude Logs Folder
+Logs/*
+
+
 # End of https://www.gitignore.io/api/powershell
