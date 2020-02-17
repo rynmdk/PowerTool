@@ -1,18 +1,59 @@
 ﻿#requires -Version 3.0
-<#
-    .NAME
-    PowerTool
+  <#PSScriptInfo
 
-    .VERSION
-    0.1
+      .VERSION 0.2
+
+      .GUID 868d6a66-99c3-4388-85aa-5026a9406215
+
+      .AUTHOR 
+
+      .COMPANYNAME
+
+      .COPYRIGHT
+
+      .TAGS Helpdesk Troubleshooting Workstations
+
+      .LICENSEURI
+
+      .PROJECTURI https://github.com/PsCustomObject/PowerTool
+
+      .ICONURI
+
+      .EXTERNALMODULEDEPENDENCIES 
+
+      .REQUIREDSCRIPTS
+
+      .EXTERNALSCRIPTDEPENDENCIES
+
+      .RELEASENOTES
+
+      .PRIVATEDATA
+
+  #>
+  <#
+    .SYNOPSIS
+    Opens a GUI menu. Helpdesk tool for troubleshooting remote workstations
 
     .DESCRIPTION
-    Helpdesk tool for troubleshooting remote workstations
+    Helpdesk tool for troubleshooting remote workstations.  This is only the shell and doesn't actually have any working scripts.
 
-    .LICENSE
-    MIT License
+    .EXAMPLE
+    PowerTool.ps1
 
-#>
+    .NOTES
+
+    .LINK
+    https://github.com/PsCustomObject/PowerTool
+    The first link is opened by Get-Help -Online 
+
+    .INPUTS
+    List of input types that are accepted by this function.
+
+    .OUTPUTS
+    List of output types produced by this function.
+  #>
+
+
 
 # ================================ [Assemblies & Variables]
 Begin {
