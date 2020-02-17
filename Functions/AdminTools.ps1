@@ -1,20 +1,7 @@
 ﻿#requires -Version 2.0
 function Start-AdminTool
 {
-  <#
-      .SYNOPSIS
-      Short Description
-      .DESCRIPTION
-      Detailed Description
-      .EXAMPLE
-      Start-AdminTool
-      explains how to use the command
-      can be multiple lines
-      .EXAMPLE
-      Start-AdminTool
-      another example
-      can have as many examples as you like
-  #>
+
   [CmdletBinding()]
   
 

@@ -317,19 +317,22 @@ Process {
   $fixesDropdown.Text = 'Scripts'
   $mainMenu.Items.Add($fixesDropdown)
 
-  # Scripts Drowdown - Dynamically generated
-  foreach($file in (Get-ChildItem -Path '..\Scripts' ))
+  # Scripts Dropdown - Dynamically generated
+  foreach($file in (Get-ChildItem -Path '.\Scripts' ))
   {
-    # To generate list items, add your script files to ..\Scripts
+    # To generate list items, add your script files to .\Scripts
 
     $dropdownName = New-Object -TypeName 'System.Windows.Forms.ToolStripMenuItem'
     $dropdownName.Size = '109, 22'
-    $dropdownName.Text = $file.BaseName
+    $dropdownName.Text = $file.Name
     $fixesDropdown.DropDownItems.Add($dropdownName)
 
     $dropdownName.Add_Click({
         # Invoke your script here
         Edit-PTlog -Write -logString "$this has been invoked on $hostname"
+        
+        & ".\Scripts\$this"
+
     })
   }
 

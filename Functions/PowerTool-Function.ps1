@@ -1,11 +1,11 @@
 ﻿#requires -Version 3.0
 
 
-Set-Location -Path $PSScriptRoot
+#Set-Location -Path $PSScriptRoot
 
 
-. .\edit-ptlog.ps1 
-. .\AdminTools.ps1 
+. .\Functions\edit-ptlog.ps1 
+. .\Functions\AdminTools.ps1 
 
 # Main Functions
 function Connect-PTworkstation 
