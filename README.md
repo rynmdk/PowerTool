@@ -9,8 +9,7 @@ The PowerTool.ps1 creates a GUI menu and calls functions from the Fuction Direct
 * Type in a local workstation name or IP address and click Connnect. 
 * Once connected to a workstation it will populate the full list of drop down menus. 
 
-Here is the link to the branch on Github
-https://github.com/OgJAkFy8/PowerTool  
+
 
 
 
