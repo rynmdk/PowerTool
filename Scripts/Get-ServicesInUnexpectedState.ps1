@@ -46,7 +46,7 @@ $Services = get-wmiobject -Class win32_service -ErrorAction SilentlyContinue #| 
 $myCol = @()
 Foreach ($service in $Services){
   $MyDetails = '' | select-Object -Property Name, State, StartMode, Health
-  If ($service.StartMode -eq 'Auto')
+  If ($service.StartMode -eq 'Auto') #TODO: All chained ifs should be converted to a switch statement for perofmrance and to tidy up code
   {
     if ($service.State -eq 'Stopped')
     {

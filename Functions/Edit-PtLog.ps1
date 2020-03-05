@@ -38,7 +38,7 @@ function Edit-PTlog
     $txbLogging.Appendtext("$PtLine`r`n")
   }
 
-
+  #TODO: Use $PsBoundParameters rather than if 
   if($Copy)
   {
     function Copy-PTClipboard 
