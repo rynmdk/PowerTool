@@ -372,8 +372,8 @@ Process {
         # Invoke your script here
         Edit-PTlog -Write -logString "$this has been invoked on $hostname"
         
-        & ".\Scripts\$this"
-
+        Invoke-Expression ".\Scripts\$this"
+        
     })
   }
 
