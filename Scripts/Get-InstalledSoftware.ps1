@@ -149,4 +149,3 @@
 # Get-InstalledSoftware -SortList InstallDate | select -First 10 #| Format-Table -AutoSize
 # Get-InstalledSoftware -SoftwareName 'Mozilla Firefox',vlc, Acrobat
 Get-InstalledSoftware
- 
